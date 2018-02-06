@@ -1,5 +1,10 @@
 <?php
 class StringParser {
+    /**
+     * Parse string to array
+     * @param $string
+     * @return array
+     */
     public function getParsedString($string)
     {
         $resultsArray = [];
@@ -9,7 +14,7 @@ class StringParser {
             foreach ($parsingResults[0] as $item) {
                 $itemArray = explode(':', $item);
                 if (isset($itemArray[0]) && isset($itemArray[1])) {
-                    $resultsArray[$itemArray[0]] = stripcslashes($itemArray[1]);
+                    $resultsArray[$itemArray[0]] = stripcslashes(preg_replace('/^"|"$/', '', $itemArray[1]));
                 }
             }
         }
