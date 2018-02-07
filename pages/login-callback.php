@@ -18,7 +18,7 @@ $oktaHandler = new OktaHandler();
             <?php if ($username = $oktaHandler->getUserName()) { ?>
                 Welcome, <?=$username?>
             <?php } else { ?>
-                User was not found
+                Invalid Token. User was not found
             <?php } ?>
         </main>
     </body>
