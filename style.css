@@ -1,0 +1,62 @@
+body {
+    margin: 0 auto;
+    width: 1024px;
+}
+header {
+    background-color: #20313b;
+    padding: 10px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+header a:active {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+header a:focus {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+main {
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid #20313b;
+    border-top: none;
+    font-size: 18px;
+}
+
+main form {
+    margin: 25px 0;
+}
+
+main form input {
+    width: 60%;
+    height: 35px;
+}
+
+main form button {
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #20313b;
+    color: white;
+    cursor: pointer;
+}
+
+main form button:hover {
+    background-color: #364148;
+}

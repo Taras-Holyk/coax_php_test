@@ -1,5 +1,6 @@
 <?php
 class OktaHandler {
+
     private $authHeaderSecret;
     private $appUrl;
     private $clientId;
@@ -122,7 +123,7 @@ class OktaHandler {
             }
         }
 
-        throw new \Exception('User not found.');
+        return null;
     }
 
     /**

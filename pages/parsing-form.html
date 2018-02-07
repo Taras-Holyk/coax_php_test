@@ -1,8 +1,21 @@
 <html>
+    <head>
+        <title>Parse some string</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
     <body>
-    <form action="parsing.php" method="POST">
-        <input type="text" name="text">
-        <button type="submit">Send</button>
-    </form>
+        <header>
+            <a href="/index.html">Home</a>
+            <a href="/pages/okta-login.php">Login with Okta</a>
+            <a href="/pages/parsing-form.html">Parse some string</a>
+        </header>
+        <main>
+            <h3>Please insert some string</h3>
+            <div><b>Example:</b> TestKey1:TestValue1 TestKey2:"a value" TestKey3:"a value with \""</div>
+            <form action="parsing.php" method="POST">
+                <input type="text" name="text"><br>
+                <button type="submit">Parse</button>
+            </form>
+        </main>
     </body>
 </html>
